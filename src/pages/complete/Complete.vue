@@ -1,10 +1,16 @@
 <template>
   <div id="app">
-    <h1>完了しました</h1>
+    <div class="wrap">
+      <h1>完了しました</h1>
+      <a href="./top.html">TOP</a>
+    </div>
   </div>
 </template>
 
-<style lang="scss">
+<style>
+.wrap {
+  text-align: center;
+}
 </style>
 
 <script>

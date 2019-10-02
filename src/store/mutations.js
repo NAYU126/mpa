@@ -1,5 +1,8 @@
 export default {
-  incrementCount(state) {
-    state.count++;
+  updateMail (state, value) {
+    state.mail = value
+  },
+  updateName (state, value) {
+    state.name = value
   }
 }

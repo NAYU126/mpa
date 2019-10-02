@@ -1,11 +1,31 @@
 <template>
   <div id="app">
-    <h1>確認画面</h1>
+    <div class="wrap">
+      <h1>確認画面</h1>
+      <p>{{ name }}</p>
+      <p>{{ mail }}</p>
+      <button @click="signUp">登録</button>
+    </div>
   </div>
 </template>
 
-<style lang="scss">
+<style>
+.wrap {
+  text-align: center;
+}
 </style>
 
 <script>
+import { mapState } from 'vuex';
+
+export default {
+  computed: {
+    ...mapState(["name", "mail"])
+  },
+  methods: {
+    signUp () {
+      window.location.href = "./complete.html"
+    }
+  }
+}
 </script>

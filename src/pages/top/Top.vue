@@ -1,10 +1,16 @@
 <template>
   <div id="app">
-    <h1>トップ</h1>
+    <div class="wrap">
+      <h1>トップ</h1>
+      <a href="/step1.html">申し込みフォームへ</a>
+    </div>
   </div>
 </template>
 
-<style lang="scss">
+<style>
+.wrap {
+  text-align: center;
+}
 </style>
 
 <script>

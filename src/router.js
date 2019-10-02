@@ -13,22 +13,27 @@ const router = new VueRouter({
   routes: [
     {
       path: '/',
+      name: 'top',
       component: Top
     },
     {
       path: '/step1',
+      name: 'step1',
       component: Step1
     },
     {
       path: '/step2',
+      name: 'step2',
       component: Step2
     },
     {
       path: '/confirm',
+      name: 'confirm',
       component: Confirm
     },
     {
       path: '/complete',
+      name: 'complete',
       component: Complete
     }
   ]
